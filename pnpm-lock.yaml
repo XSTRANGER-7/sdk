@@ -1465,6 +1465,64 @@ importers:
         specifier: ^4.5.2
         version: 4.9.5
 
+  packages/hw-simulator:
+    dependencies:
+      '@cypherock/sdk-interfaces':
+        specifier: workspace:^0.0.16
+        version: link:../interfaces
+      '@cypherock/sdk-utils':
+        specifier: workspace:^0.0.21
+        version: link:../util
+      uuid:
+        specifier: ^9.0.0
+        version: 9.0.0
+    devDependencies:
+      '@cypherock/eslint-config':
+        specifier: workspace:*
+        version: link:../util-eslint-config
+      '@cypherock/prettier-config':
+        specifier: workspace:^0.0.8
+        version: link:../util-prettier-config
+      '@cypherock/sdk-core':
+        specifier: workspace:^
+        version: link:../core
+      '@cypherock/tsconfig':
+        specifier: workspace:*
+        version: link:../util-tsconfig
+      '@jest/globals':
+        specifier: ^29.4.1
+        version: 29.4.1
+      '@types/jest':
+        specifier: ^29.4.0
+        version: 29.4.0
+      '@types/node':
+        specifier: 18.11.18
+        version: 18.11.18
+      '@types/uuid':
+        specifier: ^9.0.0
+        version: 9.0.0
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
+      eslint:
+        specifier: ^7.32.0
+        version: 7.32.0
+      jest:
+        specifier: ^29.4.1
+        version: 29.4.1(@types/node@18.11.18)(ts-node@10.9.2)
+      lint-staged:
+        specifier: ^13.2.0
+        version: 13.2.0
+      rimraf:
+        specifier: ^4.1.2
+        version: 4.1.2
+      ts-jest:
+        specifier: ^29.0.5
+        version: 29.0.5(@babel/core@7.26.0)(jest@29.4.1)(typescript@4.9.5)
+      typescript:
+        specifier: ^4.5.2
+        version: 4.9.5
+
   packages/hw-webusb:
     dependencies:
       '@cypherock/sdk-interfaces':
@@ -11390,15 +11448,17 @@ packages:
 
   /uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   /uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   /uuid@9.0.0:
     resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
     dev: false
 

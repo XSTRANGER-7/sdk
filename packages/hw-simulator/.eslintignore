@@ -1,0 +1,5 @@
+dist
+coverage
+# JS config files are not part of the TypeScript project used for linting
+.eslintrc.js
+jest.config.js
